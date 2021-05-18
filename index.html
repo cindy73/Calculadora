@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+</head>
+<body>
+	<section class="section">
+    <div class="container">
+      <center>
+      	<div class="columns">
+		  <div class="column is-3"></div>
+		  <div class="column is-6">
+		  	<div class="card color">
+  			<div class="card-content">
+    		<div class="content">
+    			<div class="columns ">
+    				<input id="valor_numero" maxlength="20" value="0" readonly="true" class="input is-focused tex-d" type="text" placeholder="Focused input">
+    			</div>
+    			<div class="columns">
+    				<div class="column is-6">
+    					<input value="EXP" id="potencia" type="button" class="button is-danger is-outlined is-fullwidth" onclick="operaciones(5)">
+    				</div>
+    				<div class="column is-3">
+    					<input type="Button" id="Dividir" value="/" class="button is-danger is-outlined is-fullwidth" onclick="operaciones(4)">
+    				</div>
+    				<div class="column is-3">
+    					<input type="Button" id="Multiplicar" value="x"class="button is-danger is-outlined is-fullwidth" onclick="operaciones(3)">
+    				</div>
+    			</div>
+    			<div class="columns">
+    				<div class="column is-3">
+    					<input type="Button" id="7" value="7" class="button is-link is-outlined is-fullwidth"onclick="concatenar('7')">
+    				</div>
+    				<div class="column is-3">
+    					<input type="Button" id="8" value="8" class="button is-link is-outlined is-fullwidth" onclick="concatenar('8')">
+    				</div>
+    				<div class="column is-3">
+    					<input type="Button" id="9" value="9" class="button is-link is-outlined is-fullwidth" onclick="concatenar('9')">
+    				</div>
+    				<div class="column is-3">
+    					<input type="Button" id="Restar" value="-" class="button is-danger is-outlined is-fullwidth is-fullwidth" onclick="operaciones(2)">
+    				</div>
+    			</div>
+    			<div class="columns">
+    				<div class="column is-3">
+    					<input type="Button" id="4" value="4" class="button is-link is-outlined is-fullwidth" onclick="concatenar('4')">
+    				</div>
+    				<div class="column is-3">
+    					<input type="Button" id="5" value="5" class="button is-link is-outlined is-fullwidth" onclick="concatenar('5')">
+    				</div>
+    				<div class="column is-3">
+    					<input type="Button" id="6" value="6" class="button is-link is-outlined is-fullwidth" onclick="concatenar('6')">
+    				</div>
+    				<div class="column is-3">
+    					<input type="Button" id="Sumar" value="+" class="button is-danger is-outlined is-fullwidth is-fullwidth"  onclick="operaciones(1)">
+    				</div>
+    			</div>
+    			<div class="columns">
+    				<div class="column is-3">
+    					<input type="Button" id="1" value="1"class="button is-link is-outlined is-fullwidth" onclick="concatenar('1')">
+    				</div>
+    				<div class="column is-3">
+    					<input type="Button" id="2" value="2"class="button is-link is-outlined is-fullwidth" onclick="concatenar('2')">
+    				</div>
+    				<div class="column is-3">
+    					<input type="Button" id="3" value="3"class="button is-link is-outlined is-fullwidth" onclick="concatenar('3')">
+    				</div>
+    				<div class="column is-3">
+    					<input type="Button" id="igual" value="="class="button is-danger is-outlined is-fullwidth is-fullwidth" onclick="igual()">
+    				</div>
+    			</div>
+    			<div class="columns">
+    				<div class="column is-6">
+    					<input type="Button" id="0" value="0" class="button is-link is-outlined is-fullwidth" onclick="concatenar('0')">
+    				</div>
+    				<div class="column is-3">
+    					<input type="Button" id="," value=","class="button is-danger is-outlined is-fullwidth"onclick="Coma()">
+    				</div>
+    				<div class="column is-3">
+    					<input type="Button" id="C" value="C"class="button is-danger is-focused is-fullwidth"onclick="resultado()">
+    				</div>
+    			</div>
+		    </div>
+		  </div>
+		</div>
+		  </div>
+		  <div class="column is-3"></div>
+		</div>
+      </center>
+    </div>
+  </section>
+<script type="text/javascript" src="JavaScript.js"></script>
+</body>
+
+</html>
